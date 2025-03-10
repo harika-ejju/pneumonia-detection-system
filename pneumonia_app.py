@@ -297,11 +297,9 @@ def render_result(prediction, confidence):
         <div>
             <h4>Assessment:</h4>
             <p style="color: #f8f9fa;">
-                {
-                "Our analysis indicates a high likelihood of pneumonia. Please consult with a healthcare professional for proper diagnosis and treatment."
-                if prediction == "PNEUMONIA" else
-                "The X-ray appears normal. However, if you're experiencing symptoms, please consult with a healthcare professional."
-                }
+                {("Our analysis indicates a high likelihood of pneumonia. Please consult with a healthcare professional for proper diagnosis and treatment." 
+                if prediction == "PNEUMONIA" else 
+                "The X-ray appears normal. However, if you're experiencing symptoms, please consult with a healthcare professional.")}
             </p>
         </div>
     """
